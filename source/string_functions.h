@@ -1,9 +1,13 @@
 #pragma once
 #include <stdio.h>
+#include <assert.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 char my_puts(const char *string);
 char *my_strchr(char *string,  char symbol);
-int my_strlen(const char *string);
+size_t my_strlen(const char *string);
 char* my_strcpy(const char *string_in, char *string_out);
 char* my_strncpy(const char *string_in, char* string_out, int number_out);
 char* my_strcat(char *string_in, char *string_out);

@@ -1,5 +1,4 @@
 #include "../source/string_functions.h"
-#include <string.h>
 
 void test_my_puts()
 {
@@ -26,13 +25,13 @@ void test_my_strlen()
 
     char T[10] = {1, 2, 3, 4, 5};
 
-    int true_len = 5;
+    size_t true_len = 5;
 
     if(true_len != my_strlen(T))
     {
-        printf("true len: %d, my_strlen: %d -> strlen test fail\n", true_len, my_strlen(T));
+        printf("true len: %ld, my_strlen: %ldd -> strlen test fail\n", true_len, my_strlen(T));
     }
-    else printf("true len: %d, my_strlen: %d -> strlen OK\n", true_len, my_strlen(T));
+    else printf("true len: %ld, my_strlen: %ldd -> strlen OK\n", true_len, my_strlen(T));
 }
 
 bool test_my_strcpy()

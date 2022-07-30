@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <assert.h>
-#include <stdlib.h>
-#include <string.h>
-
+#include "string_functions.h"
 
 #define PositiveNum 1
 
@@ -42,7 +38,7 @@ size_t my_strlen(const char *string)
 {
     assert(string);
 
-    int len = 0;
+    size_t len = 0;
 
     while(string[len] != '\0')
     {

@@ -15,7 +15,6 @@ int main()
         test_my_strncat();
         test_my_strcmp();
         test_my_strdup();
-        
         test_my_getline();
         test_my_fgets();
     #endif
